@@ -14,10 +14,12 @@ background:wheat !important;
 
   }
   #main{
-    width:320px;
-    height:380px;
-
+   
+    border:black solid 1px;
+    border-radius:10px;
+   background: violet;
   }
+ 
    
 
     #change {
@@ -28,10 +30,8 @@ background:wheat !important;
 #sl{
   position: relative;
   z-index:1;
-
-}
-#sl:focus {     
-    background-color:yellow;    
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 #main2:hover{
   background:red;
@@ -60,31 +60,37 @@ background:wheat !important;
 #sl2:hover{
   color:green;
 }
+/* Classes */
+.array1{
+  float-st
+}
+
+.array2{
+  float:right;
+}
   
 </style>
 </head>
 <body>
 <div class="container-fluid"> 
-  <div class="row">
-    <div class="col-sm-3 m-5" id ="main">
+  <div class="row" >
+    <div class="col-sm-3 m-2 p-0" id="main" >
 
-        <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="mycarousel" class="carousel slide" data-bs-ride="carousel" >
             <ol class="carousel-indicators">
                 <li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" id="change"></li>
                 <li data-bs-target="#mycarousel" data-bs-slide-to="1" id="change"></li>
                 <li data-bs-target="#mycarousel" data-bs-slide-to="2" id="change"></li>
                 <li data-bs-target="#mycarousel" data-bs-slide-to="3" id="change"></li>
             </ol>
-            <div class="carousel-inner"  id="main2">
+            <div class="carousel-inner" >
                 <div class="carousel-item active" >
                   <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
                   <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
-                    <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >  
-                    
-                  
+                    <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
                     
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" >
                   <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
                   <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
                     <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
@@ -101,23 +107,19 @@ background:wheat !important;
                 </div>
             </div>
           </div>
-          <div>
-            <div *ngFor="let item of infoList">
-              <div *ngIf="item.id==1"> {{item.oldPrice}},{{item.price}}</div>
-            </div>
+          <div  class="array0">
+          <div *ngFor="let item of infoList">
+            <div class="arrray1 " *ngIf="item.id==1"> {{item.oldPrice}}  <span class="arrray2 float-end" > <i class="fa fa-truck" aria-hidden="true"></i>&nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></span>  </div> 
+            <div *ngIf="item.id==1" class="arrray3"> {{item.price}}</div>
+            <div *ngIf="item.id==1" class="arrray4"> {{item.title}}</div>
+            <div *ngIf="item.id==1" class="arrray5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div>  
+          </div>
             
-            </div>
-    
-    </div>
-</div>
-</div>
+         </div>
+         </div>
+      </div>
+  </div>
 
-
-<i class="fa fa-user-circle" aria-hidden="true"></i>
-<i class="fa fa-heart-o" aria-hidden="true"></i>
-
-<button type="button" class="btn btn-primary btn-lg">Large</button>
-<button type="button" class="btn btn-primary btn-lg">Large</button>
 
 </body>
 
