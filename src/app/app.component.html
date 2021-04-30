@@ -101,7 +101,12 @@ background:wheat !important;
                 </div>
             </div>
           </div>
-    
+          <div>
+            <div *ngFor="let item of infoList">
+              <div *ngIf="item.id==1"> {{item.oldPrice}},{{item.price}}</div>
+            </div>
+            
+            </div>
     
     </div>
 </div>
