@@ -9,4 +9,6 @@ import info from './files/info.json';
 export class AppComponent {
   title = 'my';
   infoList:{id:Number , oldPrice:any, price:any , title:String , seen:Boolean , locality:String , date:Number}=info;
+   
+   
 }

@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+
+  body{
+background:yellow !important;
+
+  }
+  #main{
+    width:320px;
+    border:black solid 1px;
+    border-radius:10px;
+     background-color: violet;
+  }
+
+    #change {
+   width:10px;
+   height:10px;
+   border-radius: 100%;
+}
+#sl{
+  position: relative;
+  z-index:1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+ 
+}
+#sl1{
+  position:absolute;
+    top:82%;
+    left:87%;
+    z-index:2;
+   color:wheat;
+   text-shadow: 0 0 3px #000;
+   width:33px;
+
+}
+#sl1:hover{
+  color:green;
+}
+
+#sl2{
+  position:absolute;
+    top:70%;
+    left:88%;
+    z-index:2;
+   color:wheat;
+   text-shadow: 0 0 3px #000;
+   width:33px;
+}
+#sl2:hover{
+  color:green;
+}
+/* Classes */
+.array1 .array7{
+  color:grey;
+  width:33px;
+ 
+}
+.array1 .array8{
+  color:grey;
+  width:33px;
+}
+.array1 .array7:hover{
+  color:green;
+}
+.array1 .array8:hover{
+  color:green;
+}
+
+.array0{
+  margin:7px;
+  
+}
+
+.array6{
+  letter-spacing:1px;
+}
+.array3{
+  font:24px bolder;
+  letter-spacing:2px;
+}
+.array4{
+  font:24px bolder;
+  letter-spacing:2px;
+}
+.array5{
+  font:16px bold;
+}
+

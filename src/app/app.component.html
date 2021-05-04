@@ -7,82 +7,26 @@
 
  
 <title>Here</title>
-<style>
 
-  body{
-background:wheat !important;
-
-  }
-  #main{
-   
-    border:black solid 1px;
-    border-radius:10px;
-   background: violet;
-  }
- 
-   
-
-    #change {
-   width:10px;
-   height:10px;
-   border-radius: 100%;
-}
-#sl{
-  position: relative;
-  z-index:1;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-#main2:hover{
-  background:red;
-}
-#sl1{
-  position:absolute;
-    top:75%;
-    left:87%;
-    z-index:2;
-   color:wheat;
-   text-shadow: 0 0 3px #000;
-
-}
-#sl1:hover{
-  color:green;
-}
-
-#sl2{
-  position:absolute;
-    top:63%;
-    left:88%;
-    z-index:2;
-   color:wheat;
-   text-shadow: 0 0 3px #000;
-}
-#sl2:hover{
-  color:green;
-}
-/* Classes */
-.array1{
-  float-st
-}
-
-.array2{
-  float:right;
-}
-  
-</style>
 </head>
 <body>
 <div class="container-fluid"> 
   <div class="row" >
-    <div class="col-sm-3 m-2 p-0" id="main" >
+    
+    <div class="col-sm-3 m-2 p-0"  id="main" >
+    
+      
+      <div id="mycarousel" class="carousel slide" data-bs-ride="carousel" >
+       
+        
 
-        <div id="mycarousel" class="carousel slide" data-bs-ride="carousel" >
             <ol class="carousel-indicators">
                 <li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" id="change"></li>
                 <li data-bs-target="#mycarousel" data-bs-slide-to="1" id="change"></li>
                 <li data-bs-target="#mycarousel" data-bs-slide-to="2" id="change"></li>
                 <li data-bs-target="#mycarousel" data-bs-slide-to="3" id="change"></li>
             </ol>
+            
             <div class="carousel-inner" >
                 <div class="carousel-item active" >
                   <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
@@ -105,22 +49,411 @@ background:wheat !important;
                   <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
                     <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
                 </div>
+              </div>
             </div>
-          </div>
+          
+  
           <div  class="array0">
           <div *ngFor="let item of infoList">
-            <div class="arrray1 " *ngIf="item.id==1"> {{item.oldPrice}}  <span class="arrray2 float-end" > <i class="fa fa-truck" aria-hidden="true"></i>&nbsp; <i class="fa fa-shopping-basket" aria-hidden="true"></i></span>  </div> 
-            <div *ngIf="item.id==1" class="arrray3"> {{item.price}}</div>
-            <div *ngIf="item.id==1" class="arrray4"> {{item.title}}</div>
-            <div *ngIf="item.id==1" class="arrray5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div>  
-          </div>
+            <div class="array1 "*ngIf="item.id==1"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+            <div *ngIf="item.id==1" class="array3"> {{item.price}}  ₽</div>
+            <div *ngIf="item.id==1" class="array4"> {{item.title}}</div>
+            <div *ngIf="item.id==1" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div>  
+               </div>  
+              </div>
+    </div>
+
+    <!-- second -->
+        
+         <div class="col-sm-3 m-2 p-0 "  id="main" >
+             
+      
+          <div id="mycarousel2" class="carousel slide" data-bs-ride="carousel" >
             
-         </div>
-         </div>
-      </div>
-  </div>
+    
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mycarousel2" data-bs-slide-to="0" class="active" id="change"></li>
+                    <li data-bs-target="#mycarousel2" data-bs-slide-to="1" id="change"></li>
+                    <li data-bs-target="#mycarousel2" data-bs-slide-to="2" id="change"></li>
+                    <li data-bs-target="#mycarousel2" data-bs-slide-to="3" id="change"></li>
+                </ol>
+                
+                <div class="carousel-inner" >
+                  
+                    <div class="carousel-item active" >
+                      
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
+                        
+                    </div>
+                    <div class="carousel-item" >
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/nature" alt="Third slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
+                    </div>
+                 
+                </div>
+              </div>
+      
+              <div  class="array0">
+        
+              <div *ngFor="let item of infoList">
+                <div class="array1 "*ngIf="item.id==2"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+                <div *ngIf="item.id==2" class="array3"> {{item.price}}  ₽</div>
+                <div *ngIf="item.id==2" class="array4"> {{item.title}}</div>
+                <div *ngIf="item.id==2" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div> 
+                </div>  
+               </div>
+             </div>   
+         
+
+         <!-- third -->
+        
+         <div class="col-sm-3 m-2 p-0 "  id="main" >
+             
+      
+          <div id="mycarousel3" class="carousel slide" data-bs-ride="carousel" >
+            
+    
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mycarousel3" data-bs-slide-to="0" class="active" id="change"></li>
+                    <li data-bs-target="#mycarousel3" data-bs-slide-to="1" id="change"></li>
+                    <li data-bs-target="#mycarousel3" data-bs-slide-to="2" id="change"></li>
+                    <li data-bs-target="#mycarousel3" data-bs-slide-to="3" id="change"></li>
+                </ol>
+                
+                <div class="carousel-inner" >
+                  
+                    <div class="carousel-item active" >
+                      
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
+                        
+                    </div>
+                    <div class="carousel-item" >
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/nature" alt="Third slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
+                    </div>
+                 
+                </div>
+              </div>
+      
+              <div  class="array0">
+        
+              <div *ngFor="let item of infoList">
+                <div class="array1 "*ngIf="item.id==3"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+                <div *ngIf="item.id==3" class="array3"> {{item.price}}  ₽</div>
+                <div *ngIf="item.id==3" class="array4"> {{item.title}}</div>
+                <div *ngIf="item.id==3" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div> 
+                </div>  
+               </div>
+             </div>  
 
 
+
+               <!-- fourth -->
+        
+         <div class="col-sm-3 m-2 mr-3 p-0 "  id="main" >
+             
+      
+          <div id="mycarousel4" class="carousel slide" data-bs-ride="carousel" >
+            
+    
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mycarousel4" data-bs-slide-to="0" class="active" id="change"></li>
+                    <li data-bs-target="#mycarousel4" data-bs-slide-to="1" id="change"></li>
+                    <li data-bs-target="#mycarousel4" data-bs-slide-to="2" id="change"></li>
+                    <li data-bs-target="#mycarousel4" data-bs-slide-to="3" id="change"></li>
+                </ol>
+                
+                <div class="carousel-inner" >
+                  
+                    <div class="carousel-item active" >
+                      
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
+                        
+                    </div>
+                    <div class="carousel-item" >
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/nature" alt="Third slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
+                    </div>
+                 
+                </div>
+              </div>
+      
+              <div  class="array0">
+        
+              <div *ngFor="let item of infoList">
+                <div class="array1 "*ngIf="item.id==4"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+                <div *ngIf="item.id==4" class="array3"> {{item.price}}  ₽</div>
+                <div *ngIf="item.id==4" class="array4"> {{item.title}}</div>
+                <div *ngIf="item.id==4" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div> 
+                </div>  
+               </div>
+             </div>  
+
+
+                 <!-- fifth -->
+        
+         <div class="col-sm-3 m-2 mr-3 p-0 "  id="main" >
+             
+      
+          <div id="mycarousel5" class="carousel slide" data-bs-ride="carousel" >
+            
+    
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mycarousel5" data-bs-slide-to="0" class="active" id="change"></li>
+                    <li data-bs-target="#mycarousel5" data-bs-slide-to="1" id="change"></li>
+                    <li data-bs-target="#mycarousel5" data-bs-slide-to="2" id="change"></li>
+                    <li data-bs-target="#mycarousel5" data-bs-slide-to="3" id="change"></li>
+                </ol>
+                
+                <div class="carousel-inner" >
+                  
+                    <div class="carousel-item active" >
+                      
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
+                        
+                    </div>
+                    <div class="carousel-item" >
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/nature" alt="Third slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
+                    </div>
+                 
+                </div>
+              </div>
+      
+              <div  class="array0">
+        
+              <div *ngFor="let item of infoList">
+                <div class="array1 "*ngIf="item.id==5"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+                <div *ngIf="item.id==5" class="array3"> {{item.price}}  ₽</div>
+                <div *ngIf="item.id==5" class="array4"> {{item.title}}</div>
+                <div *ngIf="item.id==5" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div> 
+                </div>  
+               </div>
+             </div>  
+
+                     <!-- sixth -->
+        
+         <div class="col-sm-3 m-2 mr-3 p-0 "  id="main" >
+             
+      
+          <div id="mycarousel6" class="carousel slide" data-bs-ride="carousel" >
+            
+    
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mycarousel6" data-bs-slide-to="0" class="active" id="change"></li>
+                    <li data-bs-target="#mycarousel6" data-bs-slide-to="1" id="change"></li>
+                    <li data-bs-target="#mycarousel6" data-bs-slide-to="2" id="change"></li>
+                    <li data-bs-target="#mycarousel6" data-bs-slide-to="3" id="change"></li>
+                </ol>
+                
+                <div class="carousel-inner" >
+                  
+                    <div class="carousel-item active" >
+                      
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
+                        
+                    </div>
+                    <div class="carousel-item" >
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/nature" alt="Third slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
+                    </div>
+                 
+                </div>
+              </div>
+      
+              <div  class="array0">
+        
+              <div *ngFor="let item of infoList">
+                <div class="array1 "*ngIf="item.id==7"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+                <div *ngIf="item.id==7" class="array3"> {{item.price}}  ₽</div>
+                <div *ngIf="item.id==7" class="array4"> {{item.title}}</div>
+                <div *ngIf="item.id==7" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div> 
+                </div>  
+               </div>
+             </div>  
+
+
+
+             
+                     <!-- seventh -->
+        
+         <div class="col-sm-3 m-2 mr-3 p-0 "  id="main" >
+             
+      
+          <div id="mycarousel7" class="carousel slide" data-bs-ride="carousel" >
+            
+    
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mycarousel7" data-bs-slide-to="0" class="active" id="change"></li>
+                    <li data-bs-target="#mycarousel7" data-bs-slide-to="1" id="change"></li>
+                    <li data-bs-target="#mycarousel7" data-bs-slide-to="2" id="change"></li>
+                    <li data-bs-target="#mycarousel7" data-bs-slide-to="3" id="change"></li>
+                </ol>
+                
+                <div class="carousel-inner" >
+                  
+                    <div class="carousel-item active" >
+                      
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
+                        
+                    </div>
+                    <div class="carousel-item" >
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/nature" alt="Third slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
+                    </div>
+                 
+                </div>
+              </div>
+      
+              <div  class="array0">
+        
+              <div *ngFor="let item of infoList">
+                <div class="array1 "*ngIf="item.id==7"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+                <div *ngIf="item.id==7" class="array3"> {{item.price}}  ₽</div>
+                <div *ngIf="item.id==7" class="array4"> {{item.title}}</div>
+                <div *ngIf="item.id==7" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div> 
+                </div>  
+               </div>
+             </div>  
+             
+
+
+                    <!-- eighth -->
+        
+         <div class="col-sm-3 m-2 mr-3 p-0 "  id="main" >
+             
+      
+          <div id="mycarousel8" class="carousel slide" data-bs-ride="carousel" >
+            
+    
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mycarousel8" data-bs-slide-to="0" class="active" id="change"></li>
+                    <li data-bs-target="#mycarousel8" data-bs-slide-to="1" id="change"></li>
+                    <li data-bs-target="#mycarousel8" data-bs-slide-to="2" id="change"></li>
+                    <li data-bs-target="#mycarousel8" data-bs-slide-to="3" id="change"></li>
+                </ol>
+                
+                <div class="carousel-inner" >
+                  
+                    <div class="carousel-item active" >
+                      
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/any" alt="First slide" id="sl"  >    
+                        
+                    </div>
+                    <div class="carousel-item" >
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/arch" alt="Second slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src="https://placeimg.com/1080/1300/nature" alt="Third slide" id="sl">
+                    </div>
+                    <div class="carousel-item">
+                      <i class="fa fa-heart fa-2x" aria-hidden="true"  id="sl1"></i>
+                      <i class="fa fa-align-justify fa-2x" aria-hidden="true" id="sl2"></i>
+                        <img class="d-block w-100" src ="https://placeimg.com/1080/1300/tech" alt="Fourth slide" id="sl">
+                    </div>
+                 
+                </div>
+              </div>
+      
+              <div  class="array0">
+        
+              <div *ngFor="let item of infoList">
+                <div class="array1 "*ngIf="item.id==8"> <s class="array6">{{item.oldPrice}} ₽ </s><span class="float-end" > <i class="array7 fa fa-truck fa-2x" aria-hidden="true"></i>&nbsp; &nbsp; <i class="array8 fa fa-shopping-basket fa-2x" aria-hidden="true"></i></span>  </div> 
+                <div *ngIf="item.id==8" class="array3"> {{item.price}}  ₽</div>
+                <div *ngIf="item.id==8" class="array4"> {{item.title}}</div>
+                <div *ngIf="item.id==8" class="array5"> {{item.locality}}  <span class="float-end"> {{item.date}} </span></div> 
+                </div>  
+               </div>
+             </div>  
+             <!--finish -->
+          </div>
+        </div>
+    
+   
 </body>
 
 </html>
